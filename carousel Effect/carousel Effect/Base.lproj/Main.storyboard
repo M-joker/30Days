@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" userLabel="Home View Controller" customClass="HomeViewController" customModule="carousel_Effect" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_2279" translatesAutoresizingMaskIntoConstraints="NO" id="WX8-0j-xt8" userLabel="Background Image View">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pvE-xT-UAT">
+                                <rect key="frame" x="0.0" y="-7" width="600" height="607"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="4Um-hN-IKm">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="607"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="WCn-pA-0Ad">
+                                            <rect key="frame" x="0.0" y="104" width="600" height="400"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="20" minimumInteritemSpacing="10" id="CsN-7j-ykA">
+                                                <size key="itemSize" width="300" height="400"/>
+                                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                <inset key="sectionInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                                            </collectionViewFlowLayout>
+                                            <cells>
+                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="byCell" id="LUg-Yt-kRo" userLabel="by  Cell" customClass="byCollectionViewCell" customModule="carousel_Effect" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="0.0" width="300" height="400"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                                        <rect key="frame" x="0.0" y="0.0" width="300" height="400"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="维多利亚的秘密" translatesAutoresizingMaskIntoConstraints="NO" id="uxN-T8-6j0" userLabel="Featured Image View">
+                                                                <rect key="frame" x="0.0" y="0.0" width="300" height="400"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="400" id="G1k-h2-4Su"/>
+                                                                    <constraint firstAttribute="height" constant="400" id="dYV-3a-j4b"/>
+                                                                    <constraint firstAttribute="height" constant="400" id="iR7-2b-Axu"/>
+                                                                </constraints>
+                                                                <variation key="default">
+                                                                    <mask key="constraints">
+                                                                        <exclude reference="dYV-3a-j4b"/>
+                                                                        <exclude reference="iR7-2b-Axu"/>
+                                                                    </mask>
+                                                                </variation>
+                                                            </imageView>
+                                                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="axD-MS-ZM0">
+                                                                <rect key="frame" x="0.0" y="339" width="300" height="61"/>
+                                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Jx1-ao-oZc">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="300" height="61"/>
+                                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VICTORIA'S SECRET" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3tw-xw-onV" userLabel="by Title Label">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="300" height="61"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="61" id="MSt-Dh-Qhh"/>
+                                                                            </constraints>
+                                                                            <fontDescription key="fontDescription" name="Kailasa" family="Kailasa" pointSize="15"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="bottom" secondItem="3tw-xw-onV" secondAttribute="bottom" id="5Fi-XZ-MlN"/>
+                                                                        <constraint firstItem="3tw-xw-onV" firstAttribute="top" secondItem="Jx1-ao-oZc" secondAttribute="top" id="Dnv-4y-uHZ"/>
+                                                                        <constraint firstAttribute="trailing" secondItem="3tw-xw-onV" secondAttribute="trailing" id="Ye8-nN-uqt"/>
+                                                                        <constraint firstItem="3tw-xw-onV" firstAttribute="leading" secondItem="Jx1-ao-oZc" secondAttribute="leading" id="s6I-s3-GE0"/>
+                                                                    </constraints>
+                                                                </view>
+                                                                <blurEffect style="light"/>
+                                                            </visualEffectView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    </view>
+                                                    <constraints>
+                                                        <constraint firstItem="axD-MS-ZM0" firstAttribute="leading" secondItem="LUg-Yt-kRo" secondAttribute="leading" id="4Cr-v7-HVw"/>
+                                                        <constraint firstAttribute="trailing" secondItem="axD-MS-ZM0" secondAttribute="trailing" id="4qo-7o-Uv0"/>
+                                                        <constraint firstItem="uxN-T8-6j0" firstAttribute="leading" secondItem="LUg-Yt-kRo" secondAttribute="leading" id="dND-Su-4uX"/>
+                                                        <constraint firstAttribute="bottom" secondItem="axD-MS-ZM0" secondAttribute="bottom" id="dwv-fN-dgc"/>
+                                                        <constraint firstAttribute="bottom" secondItem="uxN-T8-6j0" secondAttribute="bottom" id="gLl-SL-MnI"/>
+                                                        <constraint firstAttribute="trailing" secondItem="uxN-T8-6j0" secondAttribute="trailing" id="hVz-sT-fto"/>
+                                                    </constraints>
+                                                    <connections>
+                                                        <outlet property="byTitleLabel" destination="3tw-xw-onV" id="dxX-IX-MU5"/>
+                                                        <outlet property="featuredImageView" destination="uxN-T8-6j0" id="Ubw-6Q-eYa"/>
+                                                    </connections>
+                                                </collectionViewCell>
+                                            </cells>
+                                            <connections>
+                                                <outlet property="dataSource" destination="BYZ-38-t0r" id="Bd2-bb-CE1"/>
+                                                <outlet property="delegate" destination="BYZ-38-t0r" id="Vvq-Do-hpn"/>
+                                            </connections>
+                                        </collectionView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="WCn-pA-0Ad" firstAttribute="centerY" secondItem="4Um-hN-IKm" secondAttribute="centerY" id="1qU-dH-yLg"/>
+                                        <constraint firstItem="WCn-pA-0Ad" firstAttribute="leading" secondItem="4Um-hN-IKm" secondAttribute="leading" id="a21-D9-EOB"/>
+                                        <constraint firstItem="WCn-pA-0Ad" firstAttribute="top" secondItem="4Um-hN-IKm" secondAttribute="top" constant="104" id="v9p-bh-svL"/>
+                                        <constraint firstItem="WCn-pA-0Ad" firstAttribute="centerX" secondItem="4Um-hN-IKm" secondAttribute="centerX" id="xYA-fb-I0b"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="WX8-0j-xt8" secondAttribute="trailing" id="6Rj-SL-Qo4"/>
+                            <constraint firstItem="WX8-0j-xt8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="AZZ-ct-PWB"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WX8-0j-xt8" secondAttribute="bottom" id="DwU-vg-Cgr"/>
+                            <constraint firstItem="WX8-0j-xt8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="iCF-uB-8ls"/>
+                            <constraint firstItem="pvE-xT-UAT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="mcF-Pv-iUB"/>
+                            <constraint firstItem="pvE-xT-UAT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="pa7-Ku-tly"/>
+                            <constraint firstAttribute="trailing" secondItem="pvE-xT-UAT" secondAttribute="trailing" id="qCu-WA-KeS"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pvE-xT-UAT" secondAttribute="bottom" id="tK8-wT-ivz"/>
+                            <constraint firstItem="pvE-xT-UAT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-27" id="yry-1N-xay"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="pa7-Ku-tly"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="WX8-0j-xt8" id="u86-Qc-HeW"/>
+                        <outlet property="collectionView" destination="WCn-pA-0Ad" id="j67-1Q-t7n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="236" y="337"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="IMG_2279" width="2448" height="3264"/>
+        <image name="维多利亚的秘密" width="600" height="743"/>
+    </resources>
+</document>
