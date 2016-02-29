@@ -14,6 +14,7 @@
 		7519F4ED1C84269E00D10CAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7519F4EB1C84269E00D10CAC /* LaunchScreen.storyboard */; };
 		7519F4F81C84269E00D10CAC /* whereTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7519F4F71C84269E00D10CAC /* whereTests.swift */; };
 		7519F5031C84269E00D10CAC /* whereUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7519F5021C84269E00D10CAC /* whereUITests.swift */; };
+		75997E5F1C8491060030E3E0 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75997E5E1C8491060030E3E0 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		7519F4FE1C84269E00D10CAC /* whereUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = whereUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7519F5021C84269E00D10CAC /* whereUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whereUITests.swift; sourceTree = "<group>"; };
 		7519F5041C84269E00D10CAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75997E5E1C8491060030E3E0 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75997E5F1C8491060030E3E0 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +80,7 @@
 		7519F4D61C84269E00D10CAC = {
 			isa = PBXGroup;
 			children = (
+				75997E5E1C8491060030E3E0 /* CoreLocation.framework */,
 				7519F4E11C84269E00D10CAC /* where */,
 				7519F4F61C84269E00D10CAC /* whereTests */,
 				7519F5011C84269E00D10CAC /* whereUITests */,
@@ -484,6 +488,7 @@
 				7519F5091C84269E00D10CAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7519F50A1C84269E00D10CAC /* Build configuration list for PBXNativeTarget "whereTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +497,7 @@
 				7519F50C1C84269E00D10CAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7519F50D1C84269E00D10CAC /* Build configuration list for PBXNativeTarget "whereUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +506,7 @@
 				7519F50F1C84269E00D10CAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
