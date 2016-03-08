@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		75E17A811C8DB28700C21FF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E17A801C8DB28700C21FF4 /* AppDelegate.swift */; };
-		75E17A831C8DB28700C21FF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E17A821C8DB28700C21FF4 /* ViewController.swift */; };
 		75E17A861C8DB28700C21FF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75E17A841C8DB28700C21FF4 /* Main.storyboard */; };
 		75E17A881C8DB28700C21FF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75E17A871C8DB28700C21FF4 /* Assets.xcassets */; };
 		75E17A8B1C8DB28700C21FF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75E17A891C8DB28700C21FF4 /* LaunchScreen.storyboard */; };
 		75E17A961C8DB28800C21FF4 /* sildeMenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E17A951C8DB28800C21FF4 /* sildeMenuTests.swift */; };
 		75E17AA11C8DB28800C21FF4 /* sildeMenuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E17AA01C8DB28800C21FF4 /* sildeMenuUITests.swift */; };
+		75E17AB31C8DB43200C21FF4 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E17AB21C8DB43200C21FF4 /* MenuTableViewController.swift */; };
+		75E17AB51C8DB58100C21FF4 /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E17AB41C8DB58100C21FF4 /* NewsTableViewController.swift */; };
+		75E17AB71C8DCAB100C21FF4 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E17AB61C8DCAB100C21FF4 /* NewsTableViewCell.swift */; };
+		75E17AB91C8DCAE900C21FF4 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E17AB81C8DCAE900C21FF4 /* MenuTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,6 @@
 /* Begin PBXFileReference section */
 		75E17A7D1C8DB28700C21FF4 /* sildeMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sildeMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75E17A801C8DB28700C21FF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		75E17A821C8DB28700C21FF4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		75E17A851C8DB28700C21FF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		75E17A871C8DB28700C21FF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75E17A8A1C8DB28700C21FF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,10 @@
 		75E17A9C1C8DB28800C21FF4 /* sildeMenuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sildeMenuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75E17AA01C8DB28800C21FF4 /* sildeMenuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sildeMenuUITests.swift; sourceTree = "<group>"; };
 		75E17AA21C8DB28800C21FF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75E17AB21C8DB43200C21FF4 /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		75E17AB41C8DB58100C21FF4 /* NewsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
+		75E17AB61C8DCAB100C21FF4 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		75E17AB81C8DCAE900C21FF4 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +104,10 @@
 			isa = PBXGroup;
 			children = (
 				75E17A801C8DB28700C21FF4 /* AppDelegate.swift */,
-				75E17A821C8DB28700C21FF4 /* ViewController.swift */,
+				75E17AB21C8DB43200C21FF4 /* MenuTableViewController.swift */,
+				75E17AB41C8DB58100C21FF4 /* NewsTableViewController.swift */,
+				75E17AB61C8DCAB100C21FF4 /* NewsTableViewCell.swift */,
+				75E17AB81C8DCAE900C21FF4 /* MenuTableViewCell.swift */,
 				75E17A841C8DB28700C21FF4 /* Main.storyboard */,
 				75E17A871C8DB28700C21FF4 /* Assets.xcassets */,
 				75E17A891C8DB28700C21FF4 /* LaunchScreen.storyboard */,
@@ -256,8 +265,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75E17A831C8DB28700C21FF4 /* ViewController.swift in Sources */,
+				75E17AB31C8DB43200C21FF4 /* MenuTableViewController.swift in Sources */,
 				75E17A811C8DB28700C21FF4 /* AppDelegate.swift in Sources */,
+				75E17AB71C8DCAB100C21FF4 /* NewsTableViewCell.swift in Sources */,
+				75E17AB51C8DB58100C21FF4 /* NewsTableViewController.swift in Sources */,
+				75E17AB91C8DCAE900C21FF4 /* MenuTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

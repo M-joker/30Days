@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		75F025C31C8EAFBF001F9490 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F025C21C8EAFBF001F9490 /* AppDelegate.swift */; };
-		75F025C51C8EAFBF001F9490 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F025C41C8EAFBF001F9490 /* ViewController.swift */; };
+		75F025C51C8EAFBF001F9490 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F025C41C8EAFBF001F9490 /* MainViewController.swift */; };
 		75F025C81C8EAFBF001F9490 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75F025C61C8EAFBF001F9490 /* Main.storyboard */; };
 		75F025CA1C8EAFBF001F9490 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75F025C91C8EAFBF001F9490 /* Assets.xcassets */; };
 		75F025CD1C8EAFBF001F9490 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75F025CB1C8EAFBF001F9490 /* LaunchScreen.storyboard */; };
 		75F025D81C8EAFBF001F9490 /* tumblrMenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F025D71C8EAFBF001F9490 /* tumblrMenuTests.swift */; };
 		75F025E31C8EAFBF001F9490 /* tumblrMenuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F025E21C8EAFBF001F9490 /* tumblrMenuUITests.swift */; };
+		75F025F11C8EC5DF001F9490 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F025F01C8EC5DF001F9490 /* MenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		75F025BF1C8EAFBF001F9490 /* tumblrMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tumblrMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75F025C21C8EAFBF001F9490 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		75F025C41C8EAFBF001F9490 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		75F025C41C8EAFBF001F9490 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		75F025C71C8EAFBF001F9490 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		75F025C91C8EAFBF001F9490 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75F025CC1C8EAFBF001F9490 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		75F025DE1C8EAFBF001F9490 /* tumblrMenuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tumblrMenuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75F025E21C8EAFBF001F9490 /* tumblrMenuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tumblrMenuUITests.swift; sourceTree = "<group>"; };
 		75F025E41C8EAFBF001F9490 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75F025F01C8EC5DF001F9490 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +100,9 @@
 			isa = PBXGroup;
 			children = (
 				75F025C21C8EAFBF001F9490 /* AppDelegate.swift */,
-				75F025C41C8EAFBF001F9490 /* ViewController.swift */,
+				75F025C41C8EAFBF001F9490 /* MainViewController.swift */,
 				75F025C61C8EAFBF001F9490 /* Main.storyboard */,
+				75F025F01C8EC5DF001F9490 /* MenuViewController.swift */,
 				75F025C91C8EAFBF001F9490 /* Assets.xcassets */,
 				75F025CB1C8EAFBF001F9490 /* LaunchScreen.storyboard */,
 				75F025CE1C8EAFBF001F9490 /* Info.plist */,
@@ -256,7 +259,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75F025C51C8EAFBF001F9490 /* ViewController.swift in Sources */,
+				75F025C51C8EAFBF001F9490 /* MainViewController.swift in Sources */,
+				75F025F11C8EC5DF001F9490 /* MenuViewController.swift in Sources */,
 				75F025C31C8EAFBF001F9490 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
