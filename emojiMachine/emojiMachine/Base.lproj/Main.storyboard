@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="emojiMachine" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hyperspace - iPhone" translatesAutoresizingMaskIntoConstraints="NO" id="GPO-Qc-osR" userLabel="Hyperspace">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qd9-s6-RTK" userLabel="Go Button">
+                                <rect key="frame" x="73" y="447" width="228" height="48"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.021030180369999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                <state key="normal" title="GO"/>
+                                <connections>
+                                    <action selector="goButtonDidTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qVn-Cn-ZcB"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BOE-qq-Je5" userLabel="Emjio Picker View">
+                                <rect key="frame" x="0.0" y="190" width="375" height="216"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bingo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="awc-jU-MqC" userLabel="Result Label">
+                                <rect key="frame" x="143" y="575" width="88" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="qd9-s6-RTK" secondAttribute="trailing" constant="58" id="7nq-13-0Cn"/>
+                            <constraint firstAttribute="trailing" secondItem="GPO-Qc-osR" secondAttribute="trailing" id="9An-Cc-HZl"/>
+                            <constraint firstItem="BOE-qq-Je5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="170" id="A3f-nL-85L"/>
+                            <constraint firstItem="GPO-Qc-osR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="BQW-01-dNY"/>
+                            <constraint firstItem="GPO-Qc-osR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Cwh-BQ-wkz"/>
+                            <constraint firstItem="awc-jU-MqC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="127" id="FqP-Ue-d7Y"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qd9-s6-RTK" secondAttribute="bottom" constant="172" id="Nzg-bJ-rBm"/>
+                            <constraint firstAttribute="trailing" secondItem="BOE-qq-Je5" secondAttribute="trailing" id="Tzs-kr-cay"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="GPO-Qc-osR" secondAttribute="bottom" id="Ute-gz-Bcq"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="awc-jU-MqC" secondAttribute="bottom" constant="68" id="ahS-84-bvP"/>
+                            <constraint firstItem="qd9-s6-RTK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iff-ZB-yZr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="awc-jU-MqC" secondAttribute="trailing" constant="128" id="koJ-nh-KOP"/>
+                            <constraint firstItem="awc-jU-MqC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="scx-Pb-UNz"/>
+                            <constraint firstItem="BOE-qq-Je5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="tNC-LS-kmE"/>
+                            <constraint firstItem="BOE-qq-Je5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xDg-0n-3v1"/>
+                            <constraint firstItem="qd9-s6-RTK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="57" id="xeg-cq-Nol"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="emjioPickerView" destination="BOE-qq-Je5" id="wFW-l6-Zgj"/>
+                        <outlet property="goButton" destination="qd9-s6-RTK" id="yGp-1l-FCX"/>
+                        <outlet property="resultLabel" destination="awc-jU-MqC" id="6G8-Yn-YxK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="235.5" y="336.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Hyperspace - iPhone" width="621" height="1104"/>
+    </resources>
+</document>
